@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+body {
+  background-color: black;
+  font-family: 'Oswald', sans-serif;
+}
+
+
+
+.one {
+  background-image: url('/images/back.jpg');
+  height: 100%;;
+}
+
+.gradient-overlay {
+   position: fixed; /* position the gradient overlay on top of the image */
+   bottom: 0; /* position the gradient overlay at the bottom of the image */
+   width: 100%; /* set the width to 100% to cover the entire image */
+   height: 50%; /* set the height to 50% to only cover the bottom portion of the image */
+   background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%); /* set the gradient */
+}
+
+.two {
+  color: rgba(255, 255, 153, 1);
+}
+
+.three {
+  color: rgba(64, 224, 208, 1);
+}
+
+.four {
+  color: rgba(255, 255, 153, 1);
+  border-radius: 15px;
+}
+
+/* Fixed Header */
+      .fixed-header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1;
+      }
+
+/* Style for the container */
+.container-fluid {
+  overflow-x: hidden;
+  position: relative;
+  padding: 0;
+}
+
+
+
+
+
+.navbar {
+  background-color:rgb(63, 220, 204, 0.7);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  
+}
+
+
+
+.active {
+  background: rgba(255, 255, 153, 1);
+  border-radius: 15px;
+}
+
+.nav-item {
+  padding: 10px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: white
+}
+.fa {
+  padding: 6px;
+  font-size: 50px;
+  width: 60px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+  text-decoration-color: white;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+.card-photo{
+	width: 500px;
+	height: 500px;
+	
+}
+
+.bg-warning {
+	background-color: black !important;
+	color:  rgba(255, 255, 153, 1);
+}
+
+.fixed-header {
+	padding:15px;
+}
+
+.evimg {
+	color: rgba(255, 255, 153, 1);
+	
+}
+
+.text-ly {
+	color: rgba(255, 255, 153, 1);
+	
+}
+
+
+@media only screen and (max-width: 600px){
+	.example-image
+	{
+		width:100%;
+	}
+	img {
+		margin-left:0!important;
+		margin-right:0!important
+	}
+	.row-cols-1 > * {
+		flex: 1 0 0%;
+	}
+}

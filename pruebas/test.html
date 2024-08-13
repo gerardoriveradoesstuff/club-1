@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+<style>
+	*{
+  font-family: 'Noto Serif Lao', serif;
+  margin: 0;
+  overflow: hidden;
+}
+
+.content{
+	background: #000;
+	height: 100vh;
+	overflow: hidden;	
+}
+
+.content h1{
+	color: #fff;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	font-family: azonix;
+	transform: translate(-50%,-50%);
+	z-index: 1;
+	font-size: 	0px;
+	text-align: center;
+}
+.box ul li{
+	position: absolute;
+	width: 35px;
+	height: 35px;
+	list-style: none;
+	opacity: 0;
+	background: radial-gradient(white, transparent,transparent);
+	bottom: 0;
+	left: 10vw;
+	animation: animate 16s linear infinite;
+}
+.box ul li:nth-child(2){
+	left: 37vw;
+	animation-delay: 2s;
+}
+.box ul li:nth-child(3){
+	left: 25vw;
+	animation-delay: 4s;
+}
+.box ul li:nth-child(4){
+	left: 60vw;
+	animation-delay: 6s;
+}
+.box ul li:nth-child(5){
+	left: 75vw;
+	animation-delay: 4s;
+}
+@keyframes animate {
+	0%{
+		transform: scale(0);
+		opacity: 1;
+		bottom: 0;
+	}
+	100%{
+		transform: scale(10);
+		opacity: 0;
+		bottom: 100vh;
+	}
+}
+	
+</style>
+</head>
+
+<body>
+<div class="box">
+  <ul>
+	  <li></li>
+	  <li></li>
+	  <li></li>
+	  <li></li>
+	  <li></li>
+	  <li></li>
+	  <li></li>
+	  <li></li>
+	  <li></li>
+	  <li></li>
+	  <li></li>
+	  <li></li>
+	  <li></li>
+	  <li></li>
+	  <li></li>
+	  <li></li>
+	  <li></li>
+	  <li></li>
+  </ul>
+</div>	
+</body>
+</html>

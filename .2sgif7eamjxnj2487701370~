@@ -1,0 +1,107 @@
+@charset "UTF-8";
+/* CSS Document */
+*{
+  font-family: 'Noto Serif Lao', serif;
+  margin: 0;
+  /*overflow: hidden;*/
+}
+
+body{
+	background-color: #090909;
+	text-decoration-color: white;
+}
+
+.content{
+	/*background-color: #090909;*/
+	/*height: 100vh;*/
+	overflow: hidden;	
+}
+
+.content h1{
+	color: #fff;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	font-family: azonix;
+	transform: translate(-50%,-50%);
+	z-index: 1;
+	font-size: 	0px;
+	text-align: center;
+}
+.box ul li{
+	position: absolute;
+	width: 35px;
+	height: 35px;
+	list-style: none;
+	opacity: 0;
+	background: radial-gradient(white, transparent,transparent);
+	bottom: 0;
+	left: 10vw;
+	animation: animate 16s linear infinite;
+}
+.box ul li:nth-child(2){
+	left: 37vw;
+	animation-delay: 2s;
+}
+.box ul li:nth-child(3){
+	left: 25vw;
+	animation-delay: 4s;
+}
+.box ul li:nth-child(4){
+	left: 60vw;
+	animation-delay: 6s;
+}
+.box ul li:nth-child(5){
+	left: 75vw;
+	animation-delay: 4s;
+}
+@keyframes animate {
+	0%{
+		transform: scale(0);
+		opacity: 1;
+		bottom: 0;
+	}
+	100%{
+		transform: scale(10);
+		opacity: 0;
+		bottom: 100vh;
+	}
+}
+hr {
+	background-color: white;
+  	display: block;
+  	height: 3px;
+  	border: 0;
+  	border-top: 2px solid #F9F7F7;
+  	margin: 1em 0;
+  	padding: 0;
+}
+
+.fa {
+  padding: 6px;
+  font-size: 50px;
+  width: 60px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+  text-decoration-color: white;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+.navbar img{
+	position: static;
+	width: 350px;
+	height: 200px;
+	border-color: aliceblue;
+}
+.card-photo{
+	width: 500px;
+	height: 500px;
+	
+}
+
